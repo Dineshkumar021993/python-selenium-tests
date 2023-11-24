@@ -157,7 +157,7 @@ class TestMainPage:
         driver.refresh()
         time.sleep(5)
 
-        CheckingAllButtonsInNewOrgButtonInDropDown = driver.find_element(By.ID,"PR_1")
+        CheckingAllButtonsInNewOrgButtonInDropDown = driver.find_element(By.ID, "PR_1")
         highlight_element(CheckingAllButtonsInNewOrgButtonInDropDown, driver)
         CheckingAllButtonsInNewOrgButtonInDropDown.send_keys("Dinesh Pvt Ltd ....")
         time.sleep(3)
@@ -165,7 +165,7 @@ class TestMainPage:
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        CheckingAllButtonsInNewOrgButtonInDropDownDisplayName = driver.find_element(By.ID,"PR_2")
+        CheckingAllButtonsInNewOrgButtonInDropDownDisplayName = driver.find_element(By.ID, "PR_2")
         highlight_element(CheckingAllButtonsInNewOrgButtonInDropDownDisplayName, driver)
         CheckingAllButtonsInNewOrgButtonInDropDownDisplayName.send_keys("Dinesh Pvt Ltd ....")
         time.sleep(3)
@@ -173,7 +173,7 @@ class TestMainPage:
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        CheckingAllButtonsInNewOrgButtonInDropDowninDropDown = driver.find_element(By.ID,'PR_3')
+        CheckingAllButtonsInNewOrgButtonInDropDowninDropDown = driver.find_element(By.ID, 'PR_3')
         highlight_element(CheckingAllButtonsInNewOrgButtonInDropDowninDropDown, driver)
         CheckingAllButtonsInNewOrgButtonInDropDowninDropDown.click()
         time.sleep(3)
@@ -189,23 +189,23 @@ class TestMainPage:
         #               attachment_type=allure.attachment_type.PNG)
         # time.sleep(5)
 
-        checkGSTINNoDropDownNewOrg = driver.find_element(By.ID,"PR_4")
+        checkGSTINNoDropDownNewOrg = driver.find_element(By.ID, "PR_4")
         highlight_element(checkGSTINNoDropDownNewOrg, driver)
         checkGSTINNoDropDownNewOrg.send_keys("1234567890")
         allure.attach(driver.get_screenshot_as_png(), name="checkGSTINNoDropDownNewOrg",
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        checkDropDown2inDropDown = driver.find_element(By.XPATH,'(//i[@class="fi fi-ss-angle-small-down font-size-18"]'
-                                                                '//parent::button[@class= "MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium'
-                                                                ' MuiAutocomplete-popupIndicator css-uge3vf"])[2]')
+        checkDropDown2inDropDown = driver.find_element(By.XPATH, '(//i[@class="fi fi-ss-angle-small-down font-size-18"]'
+                                                                 '//parent::button[@class= "MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium'
+                                                                 ' MuiAutocomplete-popupIndicator css-uge3vf"])[2]')
         highlight_element(checkDropDown2inDropDown, driver)
         checkDropDown2inDropDown.click()
         allure.attach(driver.get_screenshot_as_png(), name="checkDropDown2inDropDown",
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        checkEmailInNewOrgInDropDown = driver.find_element(By.ID,"PR_6")
+        checkEmailInNewOrgInDropDown = driver.find_element(By.ID, "PR_6")
         highlight_element(checkEmailInNewOrgInDropDown, driver)
         checkEmailInNewOrgInDropDown.send_keys("dineshkumar.pentakota@gmail.com")
         time.sleep(3)
@@ -213,7 +213,7 @@ class TestMainPage:
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        checkADDAddressInNewOrgInDropDown = driver.find_element(By.ID,"ADDADRS")
+        checkADDAddressInNewOrgInDropDown = driver.find_element(By.ID, "ADDADRS")
         highlight_element(checkADDAddressInNewOrgInDropDown, driver)
         checkADDAddressInNewOrgInDropDown.click()
         time.sleep(3)
@@ -226,12 +226,12 @@ class TestMainPage:
         allure.attach(driver.get_screenshot_as_png(), name="switchingToPopUpWindowToADDAddress",
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(3)
-        driver.find_element(By.ID,"ADDRESS_NEW").click()
+        driver.find_element(By.ID, "ADDRESS_NEW").click()
         allure.attach(driver.get_screenshot_as_png(), name="switchingToPopUpWindowToADDAddress",
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        checkTitleButtonInAddAddress = driver.find_element(By.ID,"ADD_1")
+        checkTitleButtonInAddAddress = driver.find_element(By.ID, "ADD_1")
         highlight_element(checkTitleButtonInAddAddress, driver)
         checkTitleButtonInAddAddress.send_keys("DineshAddress")
         time.sleep(2)
@@ -239,21 +239,14 @@ class TestMainPage:
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-        checkCityButtonInAddAddress = driver.find_element(By.ID,"ADD_2")
+        checkCityButtonInAddAddress = driver.find_element(By.ID, "ADD_2")
         highlight_element(checkCityButtonInAddAddress, driver)
         checkCityButtonInAddAddress.send_keys("Anakapalli")
         time.sleep(2)
-        allure.attach(driver.get_screenshot_as_png(),name="checkCityButtonInAddAddress",
+        allure.attach(driver.get_screenshot_as_png(), name="checkCityButtonInAddAddress",
                       attachment_type=allure.attachment_type.PNG)
 
-
-
-
-
-
-
-
-        checkPrefrencesInNewOrgInDropDown = driver.find_element(By.XPATH,'//span[text()="ALT + 1"]')
+        checkPrefrencesInNewOrgInDropDown = driver.find_element(By.XPATH, '//span[text()="ALT + 1"]')
         highlight_element(checkPrefrencesInNewOrgInDropDown, driver)
         checkPrefrencesInNewOrgInDropDown.click()
         time.sleep(3)
@@ -269,30 +262,6 @@ class TestMainPage:
                       attachment_type=allure.attachment_type.PNG)
         time.sleep(5)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         # driver.back()
         # time.sleep(5)
         # checkMyOrgButton = driver.find_element(By.XPATH,'//button[@class="btn btn-outline-secondary mt-0 font-size-12 btn-block b-r-3"]')
@@ -301,6 +270,3 @@ class TestMainPage:
         # allure.attach(driver.get_screenshot_as_png(), name="checkMyOrgButton",
         #               attachment_type=allure.attachment_type.PNG)
         # time.sleep(5)
-
-
-
